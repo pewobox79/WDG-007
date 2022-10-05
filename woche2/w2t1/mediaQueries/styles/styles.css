@@ -1,0 +1,54 @@
+header{
+
+    background-color: red;
+
+}
+
+#header{
+    
+    background-color: yellow;
+
+}
+
+.header{
+    background-color: purple;
+}
+
+
+
+
+
+
+
+
+
+/*0px bis zu einem wert der mediaQuery*/
+/* text block query übung mit mobile first*/
+#textBlock{
+    background-color: turquoise;
+}
+
+#textBlock h2{
+   font-size: 2rem;
+   text-align: center;
+}
+
+#textBlock p{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+@media screen and (min-width: 800px){
+
+    #textBlock h2{
+        color: red;
+    }
+
+    #textBlock p{
+        padding: 0 20% 0 20%;
+    }
+
+}
+

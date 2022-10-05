@@ -1,0 +1,9 @@
+/*Button anpassung design von bootstrap*/
+
+.btn:hover{
+    background-color: red;
+}
+
+.btn-primary{
+    color: black;
+}

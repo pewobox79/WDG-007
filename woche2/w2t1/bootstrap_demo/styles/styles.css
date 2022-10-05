@@ -1,0 +1,12 @@
+#bootstrapCardSection{
+    width: 80%;
+    background-color: red;
+    min-height: 300px;
+    margin:auto;
+
+}
+
+.myClass{
+    background-color: green;
+}
+
