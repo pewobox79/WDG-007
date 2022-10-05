@@ -6,6 +6,7 @@
 //Konstanten
 
 const myString = 'das ist ein String';
+console.log(myString);
 const myNumber = 45;
 const myNumber2 = "45";
 const myBoolean = false;
@@ -32,6 +33,11 @@ const myObject = {name: "Peter", age: 43, groeße: "180cm"};
 //forEach loop über myCars:
 
 const myCars = ["Ford Mustang", "Mercedes GL", "Trabant"];
+console.log(myCars);
+
+myCars.push("Hummer");
+
+console.log(myCars);
 
 myCars.forEach((car, index)=>{
     console.log(car + " hat den index " + index) ;
@@ -102,3 +108,16 @@ switch(car){
 
 }
 
+//array mit objecten und verschachtelung
+const meineRezepte =[
+    {
+        name: "Pizza", 
+        zubereitung: 30, 
+        zutaten:[
+            {zutat: "Mehl", menge: "150g"},
+        ],
+        personen: 2
+    }
+]
+
+console.log(meineRezepte)
