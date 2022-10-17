@@ -1,0 +1,23 @@
+{
+  "name": "nodeintroduction",
+  "version": "1.0.0",
+  "description": "first introduction to node for better understanding reactjs",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "nodemon index.mjs"
+  },
+  "keywords": [
+    "node",
+    "react"
+  ],
+  "author": "Peter Wolf",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

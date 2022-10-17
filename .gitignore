@@ -1,2 +1,6 @@
+#text datei ignorieren
 /woche2/w2t3/*.txt
+
 /tag1/todolist/*
+#module ignoren
+/woche4/w4t1/nodeIntro/node_modules/*
