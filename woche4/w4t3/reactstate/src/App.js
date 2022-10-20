@@ -1,12 +1,12 @@
 import './App.css';
 import FormComponent from './Components/FormComponent';
+import Map from './Components/Map';
 
 function App() {
   return (
-    <div className="App">
-      <h1>mein zeug</h1>
-        <FormComponent/>
-    </div>
+
+    <Map />
+
   );
 }
 

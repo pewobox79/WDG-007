@@ -15,7 +15,8 @@ export default function FormComponent() {
         alert(`hallo ${person.firstname} ${person.lastname}. Du wohnst in ${person.address}`)
     }
     
-    return (
+
+return (
         <form>
             <InputField type={"text"} placeholder={"firstname"} name={"firstname"} person={person} setPerson={setPerson} />
             <InputField type={"text"} placeholder={"lastname"} name={"lastname"} person={person} setPerson={setPerson} />
