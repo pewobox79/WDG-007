@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from '../Map';
 
 export default function ModalComponent({isOpen, setIsOpen, blogArticle}){
 
@@ -22,7 +23,7 @@ const modalHidden={
             <h1 style={{fontSize: "3rem", color: "black"}}>{blogArticle.title}</h1>
             <p>{blogArticle.body}</p>
             <button style={{position: "absolute", right: "30px", top: "30px"}} onClick={()=>setIsOpen(false)}>X</button>
-
+        <Map/>
 
         </div>
     )
