@@ -1,12 +1,8 @@
-import ArrayState from './Components/w5t1/stateManagement/ArrayState';
-import ObjectState from './Components/w5t1/stateManagement/ObjectState'
+import DataFetch from './Components/w5t2/DataFetch';
 
 function App() {
   return (
-    <>
-    <ObjectState/>
-  
-    </>
+    <DataFetch/>
   );
 }
 
