@@ -1,8 +1,11 @@
-import DataFetch from './Components/w5t2/DataFetch';
-
+import DataSearch from './Components/w5t3/fetchAndSearch/DataSearch';
+import Layout from './Components/w5t3/Layout/Layout'
 function App() {
   return (
-    <DataFetch/>
+    <Layout>
+      <DataSearch />
+    </Layout>
+
   );
 }
 
