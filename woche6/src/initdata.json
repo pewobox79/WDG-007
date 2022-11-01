@@ -1,0 +1,238 @@
+{
+    "sys": {
+        "type": "Array"
+    },
+    "total": 2,
+    "skip": 0,
+    "limit": 100,
+    "items": [
+        {
+            "metadata": {
+                "tags": []
+            },
+            "sys": {
+                "space": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Space",
+                        "id": "xwp6vl4bchbl"
+                    }
+                },
+                "id": "3CGu5xZOENmF4P2p5m0Arx",
+                "type": "Entry",
+                "createdAt": "2022-10-31T10:12:04.219Z",
+                "updatedAt": "2022-10-31T10:12:04.219Z",
+                "environment": {
+                    "sys": {
+                        "id": "master",
+                        "type": "Link",
+                        "linkType": "Environment"
+                    }
+                },
+                "revision": 1,
+                "contentType": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "ContentType",
+                        "id": "author"
+                    }
+                },
+                "locale": "en-US"
+            },
+            "fields": {
+                "name": "klaus mueller",
+                "picture": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Asset",
+                        "id": "7ijN3a8uNxSjjJPoQwytLH"
+                    }
+                },
+                "email": "klaus@mueller.de",
+                "aboutAuthor": {
+                    "nodeType": "document",
+                    "data": {},
+                    "content": [
+                        {
+                            "nodeType": "paragraph",
+                            "data": {},
+                            "content": [
+                                {
+                                    "nodeType": "text",
+                                    "value": "das ist der klaus",
+                                    "marks": [],
+                                    "data": {}
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "metadata": {
+                "tags": []
+            },
+            "sys": {
+                "space": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Space",
+                        "id": "xwp6vl4bchbl"
+                    }
+                },
+                "id": "3vHj5qo5Iu3FADzjXMs4N5",
+                "type": "Entry",
+                "createdAt": "2022-10-31T10:09:08.308Z",
+                "updatedAt": "2022-10-31T10:09:08.308Z",
+                "environment": {
+                    "sys": {
+                        "id": "master",
+                        "type": "Link",
+                        "linkType": "Environment"
+                    }
+                },
+                "revision": 1,
+                "contentType": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "ContentType",
+                        "id": "author"
+                    }
+                },
+                "locale": "en-US"
+            },
+            "fields": {
+                "name": "Peter Wolf",
+                "picture": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Asset",
+                        "id": "1Vusev9XfwjjTggHApViwL"
+                    }
+                },
+                "email": "pewobox79@gmail.com",
+                "aboutAuthor": {
+                    "nodeType": "document",
+                    "data": {},
+                    "content": [
+                        {
+                            "nodeType": "paragraph",
+                            "data": {},
+                            "content": [
+                                {
+                                    "nodeType": "text",
+                                    "value": "Das bin ich in voller Pracht.",
+                                    "marks": [],
+                                    "data": {}
+                                }
+                            ]
+                        },
+                        {
+                            "nodeType": "paragraph",
+                            "data": {},
+                            "content": [
+                                {
+                                    "nodeType": "text",
+                                    "value": "",
+                                    "marks": [],
+                                    "data": {}
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "includes": {
+        "Asset": [
+            {
+                "metadata": {
+                    "tags": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "xwp6vl4bchbl"
+                        }
+                    },
+                    "id": "1Vusev9XfwjjTggHApViwL",
+                    "type": "Asset",
+                    "createdAt": "2022-10-31T10:07:14.099Z",
+                    "updatedAt": "2022-10-31T10:07:14.099Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "title": "Peter Wolf ProfilBild",
+                    "description": "peter wolf author",
+                    "file": {
+                        "url": "//images.ctfassets.net/xwp6vl4bchbl/1Vusev9XfwjjTggHApViwL/cc8e9f23564ff5cb514b849a56aaff66/pewo-emoji-2.png",
+                        "details": {
+                            "size": 68219,
+                            "image": {
+                                "width": 277,
+                                "height": 338
+                            }
+                        },
+                        "fileName": "pewo-emoji-2.png",
+                        "contentType": "image/png"
+                    }
+                }
+            },
+            {
+                "metadata": {
+                    "tags": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "xwp6vl4bchbl"
+                        }
+                    },
+                    "id": "7ijN3a8uNxSjjJPoQwytLH",
+                    "type": "Asset",
+                    "createdAt": "2022-10-31T10:11:41.243Z",
+                    "updatedAt": "2022-10-31T10:11:41.243Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "title": "Klaus mueller",
+                    "description": "profilbild klaus müller",
+                    "file": {
+                        "url": "//images.ctfassets.net/xwp6vl4bchbl/7ijN3a8uNxSjjJPoQwytLH/68c29bfa586550ae980f3feda1443c2c/drupal-developer-peter-wolf.jpeg",
+                        "details": {
+                            "size": 3405,
+                            "image": {
+                                "width": 100,
+                                "height": 100
+                            }
+                        },
+                        "fileName": "drupal-developer-peter-wolf.jpeg",
+                        "contentType": "image/jpeg"
+                    }
+                }
+            }
+        ]
+    }
+}

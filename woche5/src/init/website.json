@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "type": "homepage",
+            "name": "homepage",
+            "uuid": "1346-24598-45323",
+            "slug": "/",
+            "meta_tags": {
+                "title": "Homepage of peter wolf",
+                "open_graph": "für die social media infos",
+                "description": "die description von der homepage für seo",
+                "keywords": ["webdev", "seo", "consulting", "education"]
+            }, 
+            "components":[
+                {
+                    "type": "header",
+                    "uuid":"1346-24598-45643", 
+                    "content": [
+                        {
+                            "img": "https://www.placeholder.com", 
+                            "title": "das ist der header" 
+                        }
+                    ]
+                },
+            {
+                "type": "textblock", 
+                "uuid": "1346-24598-45443",
+                "content":
+                [
+                    {
+                        "heading": "Mein Textblock",
+                        "body": "das ist der content"
+                    }
+                ] 
+            },
+            {
+                "type": "recomendation",
+                "uuid":"1346-24598-98643", 
+                "content": [
+                    {
+                         "title": "das ist der header" ,
+                         "subtitle": "was meine kunden sagen",
+                         "clients":[
+                            {
+                                "uuid": "4346-21598-45323",
+                                "company": "AVIAREPS",
+                                "company_logo": "https://www.aviareps.com/....",
+                                "project_relation": {
+                                    "uuid": "6666-24598-45323",
+                                    "project_name": "AVIAREPS ECO System"
+                                },
+                                "recommender": {
+                                    "name": "uwe david",
+                                    "position": "Lead Developer" ,
+                                    "quote": "peter is a nice person"
+                                }
+                                
+                            },
+                            {
+                                "uuid": "8935-21598-23479",
+                                "company": "HECHT Technologie GmbH",
+                                "company_logo": "https://www.hecht.com/....",
+                                "project_relation": {
+                                    "uuid": "6666-24598-22098",
+                                    "project_name": "Sommerevent einladung online"
+                                },
+                                "recommender": {
+                                    "name": "Jan Hecht",
+                                    "position": "CEO" ,
+                                    "quote": "thanks for the great work"
+                                }
+                                
+                            }
+
+                         ]
+                    }
+                ]
+            }
+
+            ]
+            
+        }
+    ]
+}
