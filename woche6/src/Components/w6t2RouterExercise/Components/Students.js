@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Students({ studentsList }) {
-  console.log("aus students.js", studentsList);
 
   const listOfStudents = studentsList.map((student) => {
     return (
