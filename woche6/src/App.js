@@ -4,12 +4,13 @@ import Books from './Components/w6t2/Books';
 import BookDetailPage from './Components/w6t2/BookDetailPage';
 import './Components/w6t2/LinkStyle.css'
 import ExerciseFull from './Components/w6t2RouterExercise/ExperciseFull';
-import FetchContentful from './Components/w6t5/Contentful/FetchContenful';
+import ContentfulMain from './Components/w6t5/Contentful/ContentfullMain';
+
 
 function App() {
 
   return(
-    <FetchContentful/>
+    <ContentfulMain/>
   )
 {/** 
   return (

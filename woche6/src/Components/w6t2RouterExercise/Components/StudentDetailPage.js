@@ -3,6 +3,7 @@ import "../styles.css";
 import { useParams, Link } from "react-router-dom";
 import GoBack from "./AssetsComponents/GoBack";
 import { getUser } from "../Helper/studentHelper";
+import Head from "./AssetsComponents/Head";
 
 
 
@@ -17,7 +18,8 @@ export default function StudentDetailPage({ studentsList, subjects }) {
   return (
     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "80%", }}>
 
-    
+      <Head title={`das profil von ${selectedStudent[0].name.first}`} content={`das ist ein ausführliches profil von ${selectedStudent[0].name.first}`} name={"description"} />
+
       <GoBack title="Back to StudentsList" />
       <h1>Studentdetailpage </h1>
       <Link to={`/students/${selectedStudent[0].login.uuid}/results`} className="link" >See Results</Link>

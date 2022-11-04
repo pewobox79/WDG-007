@@ -15,7 +15,10 @@ function ExerciseFull() {
 
   return (
     <div style={{ width: "100%" }}>
-    
+    <Helmet>
+      <title>Student Exercise</title>
+      <meta name="description" content="das ist meine Übung für Students management SPA"/>
+    </Helmet>
       {/**ausgelagerte navigation  */}
      <MainNavigation/>
       <div className="Instructions">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Head from "./AssetsComponents/Head";
 
 export default function Students({ studentsList }) {
 
@@ -15,6 +16,8 @@ export default function Students({ studentsList }) {
 
   return (
     <div>
+      <Head title={"studentslist"} content={"das ist die studies liste"} name={"description"}/>
+
       <h1>List of Students</h1>
       <ul>{listOfStudents}</ul>
     </div>
