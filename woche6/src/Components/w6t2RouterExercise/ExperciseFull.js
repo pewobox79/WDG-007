@@ -4,6 +4,7 @@ import Instructions from "./Instructions";
 import "./styles.css";
 import MainRoutes from "./Routing/MainRoutes";
 import MainNavigation from "./Components/Navigation/MainNavigation";
+import { Helmet } from "react-helmet";
 
 function ExerciseFull() {
   const students = useStudents();
@@ -14,6 +15,7 @@ function ExerciseFull() {
 
   return (
     <div style={{ width: "100%" }}>
+    
       {/**ausgelagerte navigation  */}
      <MainNavigation/>
       <div className="Instructions">

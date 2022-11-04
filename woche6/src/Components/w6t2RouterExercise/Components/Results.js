@@ -2,6 +2,7 @@ import React from 'react';
 import GoBack from './AssetsComponents/GoBack';
 import { useParams } from 'react-router-dom';
 import { getUser } from '../Helper/studentHelper';
+import { Helmet } from 'react-helmet';
 
 export default function Results({ subjects, studentsList,name }) {
     
@@ -24,6 +25,7 @@ export default function Results({ subjects, studentsList,name }) {
     return (
 
         <div>
+        
             <GoBack title={`Profile of ${selectedStudent[0].name.first}`}/>
             <h3>{name}</h3>
             <h3>Grade of {selectedStudent[0].name.first}</h3>
