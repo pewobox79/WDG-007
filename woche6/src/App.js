@@ -5,12 +5,13 @@ import BookDetailPage from './Components/w6t2/BookDetailPage';
 import './Components/w6t2/LinkStyle.css'
 import ExerciseFull from './Components/w6t2RouterExercise/ExperciseFull';
 import ContentfulMain from './Components/w6t5/Contentful/ContentfullMain';
+import WordPressFetch from './Components/TobiBug/WordPressFetch';
 
 
 function App() {
 
   return(
-    <ContentfulMain/>
+    <h1>choose your day</h1>
   )
 {/** 
   return (

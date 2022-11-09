@@ -13,6 +13,7 @@
 /woche4/w4t5/mapservice/node_modules
 /woche5/node_modules
 /woche6/node_modules
+/woche7/node_modules
 
 #sentsitive data
 /woche6/.env.*
