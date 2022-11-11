@@ -1,6 +1,6 @@
 import React from 'react'
-
 import Workspace2 from './Workspace2';
+
 export default function Workspace() {
     
     const themeStyle = {
