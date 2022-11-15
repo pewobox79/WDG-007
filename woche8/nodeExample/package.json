@@ -1,0 +1,14 @@
+{
+  "name": "nodeexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.cjs"
+  },
+  "author": "Peter Wolf",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

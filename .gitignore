@@ -15,6 +15,9 @@
 /woche6/node_modules
 /woche7/node_modules
 /reactrouter/node_modules
+/expressJS/node_modules
+/my-vite-example/node_modules
+/woche8/nodeExample/node_modules
 
 #sentsitive data
 /woche6/.env.*
