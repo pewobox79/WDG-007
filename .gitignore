@@ -18,6 +18,7 @@
 /expressJS/node_modules
 /my-vite-example/node_modules
 /woche8/nodeExample/node_modules
+/woche8/nodeFetching/node_modules
 
 #sentsitive data
 /woche6/.env.*
