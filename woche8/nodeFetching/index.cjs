@@ -1,31 +1,28 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
+const userRoutes = require('./routing/user.cjs');
+const productRoutes = require('./routing/product.cjs')
 
-//extension ejs verfügbar machen..dann auch die .html in .ejs dateien umschreiben
 app.set('view engine', 'ejs');
 
+//middleware - funktion die einen vorgelagerten Job übernimmt
+app.use(express.urlencoded({ extended: true  }))
 
 app.get('/', (req, res) => {
-    const filePath = path.join(__dirname, '/public', 'index.ejs')
-    //rendering von .ejs datei 
-    res.render(filePath)
+    const filePath = path.join(__dirname, '/public', '/index.ejs');
+    res.render(filePath, {subTitle: "Hallo erster Subtitle"});
+    res.end();
 })
 
-app.get('/user/:id', (req, res)=>{
-    console.log(req);
-    res.send(`user Id: ${req.params.id} `)
-})
-
-
-app.get("/download", (req, res)=>{
-    const filePath = path.join(__dirname, '/public', 'index.html')
-    res.download(filePath)
-})
+app.use('/user', userRoutes);
+app.use('/', productRoutes)
 
 
 
 
 
-app.listen(4344, () => console.log("server listen to 4344"));
+
+const PORT = 3030;
+app.listen(PORT, () => console.log(`server listen to ${PORT}`))
+

@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"/>
+
     <title>Document</title>
 </head>
+
 <body>
-    <h1>hallo index.html</h1>
-    <a href="/contact">Contact</a>
+    <%- include('./header.ejs', {title: "Mein Titel der Website" }) %>
+        <h1>hallo index.html</h1>
+        <h5><%- locals.subTitle %></h5>
+        <!--formular mit drei feldern (name,city, strasse) bauen mit methode POST auf die URL /user zeigen-->
+        <form method="POST" action="/user">
+            <input type='text' name='name' placeholder="Dein Name" /><br>
+            <input type="text" name="job" placeholder="Dein Job" /><br>
+            <button type="submit">Register</button>
+        </form>
+        <br>
+        <form method="POST" action="/product">
+            <input type="text" name="name" placeholder="Produktname" /><br>
+            <input type="text" name="job" placeholder="Aufgabe des Produkts" /><br>
+            <button type="submit">Produkt aufnehmen</button>
+        </form>
+
 </body>
+
 </html>
