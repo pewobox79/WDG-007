@@ -19,6 +19,7 @@
 /my-vite-example/node_modules
 /woche8/nodeExample/node_modules
 /woche8/nodeFetching/node_modules
+/woche8/adoptAPet/node_modules
 
 #sentsitive data
 /woche6/.env.*

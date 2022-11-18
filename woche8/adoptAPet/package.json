@@ -1,0 +1,18 @@
+{
+  "name": "adoptapet",
+  "version": "1.0.0",
+  "description": "exercise from platform",
+  "main": "index.cjs",
+  "scripts": {
+    "start": "node index.cjs",
+    "dev": "nodemon index.cjs"
+  },
+  "author": "peter wolf",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
