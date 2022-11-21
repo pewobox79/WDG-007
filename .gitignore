@@ -20,6 +20,8 @@
 /woche8/nodeExample/node_modules
 /woche8/nodeFetching/node_modules
 /woche8/adoptAPet/node_modules
+/woche8/sqltest
+/woche9/travelWishlist/node_modules
 
 #sentsitive data
 /woche6/.env.*
