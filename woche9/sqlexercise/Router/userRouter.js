@@ -1,17 +1,23 @@
 import { Router } from "express";
 import { getAllUser, getHomepage, createNewUser, getSingleUser, deleteSingleUser, updateSingleUser } from "../controller/controller.js";
+
 const userRouter = Router();
 //validate input 
-import {body} from 'express-validator';
+import { body } from 'express-validator';
 
+//import Middleware
+
+import { localLogger, accessToken, checkAccessToken } from '../middleware/middleware.js'
+
+userRouter.use(checkAccessToken); // => für globale verwendung in userRouter
 userRouter
     .route('/')
-    .get(getHomepage)
+    .get(accessToken, getHomepage)
 
 userRouter
     .route('/api/user')
-    .get(getAllUser)
-    .post(body('firstname').isLength({min: 1}),body('lastname').isLength({min: 1}),body('age').isInt(), createNewUser)
+    .get(localLogger, getAllUser)
+    .post(body('firstname').isLength({ min: 1 }), body('lastname').isLength({ min: 1 }), body('age').isInt(), createNewUser)
 
 
 userRouter

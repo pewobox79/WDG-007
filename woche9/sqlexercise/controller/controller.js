@@ -1,24 +1,31 @@
 import { pool } from '../db.js'
-import {validationResult} from 'express-validator'
+import { validationResult } from 'express-validator'
 
 
-export const getHomepage = (req, res) => {
-    console.log(pool);
+
+export const getHomepage = (req, res, next) => {
+    //console.log(pool);
+    console.log("validUser aus getHomepage",req.validUser)
+    console.log("access Token aus getHomepage",req.myAccessToken);
     res.render('/Users/pewobox/WDG007/woche9/sqlexercise/public/index.ejs')
+    next() //gibt aufforderung an middle weiter...
 }
 
 //all user controller
-export const getAllUser = async (req, res) => {
+export const getAllUser = async (req, res, next) => {
+    console.log("reqUrl", req.myRequestUrl)
     const { rows } = await pool.query('SELECT * FROM users');
     res.json(rows)
+    next()
+   
 }
 
 export const createNewUser = async (req, res) => {
-    
+
     //check validation mit express-validate ob body values auch nach dme schema passen
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+        return res.status(400).json({ errors: errors.array() });
     }
 
 
@@ -54,6 +61,7 @@ export const getSingleUser = async (req, res) => {
 export const updateSingleUser = async (req, res) => {
 
     const { id } = req.params;
+    console.log(req.search)
     const { firstname, lastname, age } = req.body;
 
     const myQuery = 'UPDATE users SET first_name=$1, last_name=$2, age=$3 WHERE id=$4 RETURNING *;'
@@ -88,3 +96,4 @@ export const deleteSingleUser = async (req, res) => {
 
     res.send("single user deleted")
 }
+
