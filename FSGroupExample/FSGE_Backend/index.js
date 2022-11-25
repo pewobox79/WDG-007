@@ -1,10 +1,15 @@
 import express from 'express'
 const app = express();
 const PORT = 4430;
+import cors from 'cors';
 
-app.get('/', (req, res)=>{
+import {userRouter} from './Routing/userRouter.js'
 
-    res.status(200).send('Hallo World')
-})
+//middlewares
+app.use(express.json()); //macht alle routes für JSON empfänglich
+app.use(cors());
+
+//Routing
+app.use('/', userRouter);
 
 app.listen(PORT, ()=>console.log(`server listen to Port ${PORT}`))
