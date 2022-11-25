@@ -10,6 +10,7 @@ import { body } from 'express-validator';
 import { localLogger, accessToken, checkAccessToken } from '../middleware/middleware.js'
 
 userRouter.use(checkAccessToken); // => für globale verwendung in userRouter
+
 userRouter
     .route('/')
     .get(accessToken, getHomepage)

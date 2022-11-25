@@ -23,6 +23,9 @@
 /woche8/sqltest
 /woche9/travelWishlist/node_modules
 /woche9/sqlexercise/node_modules
-
+/fullStackExample/Backend-ExpressJS/node_modules
+/fullStackExample/Frontend-React/node_modules
+/FSGroupExample/FSG_Frontend/node_modules
+/FSGroupExample/FSGE_Backend/node_modules
 #sentsitive data
 /woche6/.env.*

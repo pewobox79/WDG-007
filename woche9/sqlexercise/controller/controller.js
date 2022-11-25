@@ -7,7 +7,9 @@ export const getHomepage = (req, res, next) => {
     //console.log(pool);
     console.log("validUser aus getHomepage",req.validUser)
     console.log("access Token aus getHomepage",req.myAccessToken);
-    res.render('/Users/pewobox/WDG007/woche9/sqlexercise/public/index.ejs')
+    //res.render('/Users/pewobox/WDG007/woche9/sqlexercise/public/index.ejs')
+    res.status(200).json({data: {token: req.validUser}})
+    
     next() //gibt aufforderung an middle weiter...
 }
 

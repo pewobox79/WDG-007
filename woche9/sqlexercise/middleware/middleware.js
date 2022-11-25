@@ -24,7 +24,7 @@ export const accessToken = (req, res, next) => {
         req.myAccessToken = accessToken;
         next()
     } else {
-        res.status(403).redirect("/access-denied")
+        res.status(403).redirect("localhost:3000/error")
     }
 
 

@@ -1,23 +1,20 @@
 {
-  "name": "sqlexercise",
+  "name": "backend-expressjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "Peter wolf",
+  "author": "Peter Wolf",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.20"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "express-validator": "^6.14.2",
     "pg": "^8.8.0"
   }
 }

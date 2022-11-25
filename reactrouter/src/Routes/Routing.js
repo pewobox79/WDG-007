@@ -5,6 +5,16 @@ import BlogPosts, { loader as blogPosts } from '../Components/BlogPosts';
 import BlogArticle, { loader as singleArticle } from '../Components/BlogArticle';
 import ErrorPage from '../Components/ErrorPage';
 import DeferComponent, {loader as slowPosts} from '../Components/DeferComponent';
+import {getToken} from '../expressExample/expressFetch';
+
+async function getAccessToken(){
+    const response = await fetch("http://localhost:3500/?token=12345token");
+    const json = await response.json();
+    console.log("accesstoken von react",json)
+}
+
+getAccessToken()
+
 
 
 function Routing() {
