@@ -1,12 +1,15 @@
-import { useState } from 'react'
+import { RouterProvider } from 'react-router-dom';
 import './App.css'
-import LoginForm from './Components/LoginForm'
+import Layout from './Components/Layout';
+import {router} from './Routing/Router'
 
 function App() {
  
   return (
     <div className="App">
-      <LoginForm/>
+      
+      <RouterProvider router={router}/>
+    
     </div>
   )
 }

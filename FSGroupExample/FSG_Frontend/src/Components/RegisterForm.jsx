@@ -1,40 +1,44 @@
 import React, {useState} from 'react'
-import { loginRequest } from '../controller/requestController';
+import { registerRequest } from '../controller/requestController';
 import Layout from './Layout';
 
-export default function LoginForm(){
+export default function RegisterForm(){
         const userSchema ={
+        firstname: "",
+        lastname: "",
         username: "",
         password: ""
     }
 
 //platz für die user daten 
-    const [user, setUser] = useState(userSchema);
+    const [newUser, setNewUser] = useState(userSchema);
 
 
 //kümmert sich um die eingaben in <input/> feldern
     function handleChange(event){
         //aktualisiere den alten user input mit den neuen daten aus dem formular
-        setUser(prev=> ({...prev, [event.target.name]: event.target.value}))
+        setNewUser(prev=> ({...prev, [event.target.name]: event.target.value}))
         
     }
 
 //daten weg schicken
     function onSubmit (e){
         e.preventDefault();
-        loginRequest(user)//handles POST request to server
-        console.log(user)
+        registerRequest(newUser)
+        console.log(newUser)
         
     }
     
         
     return(
         <Layout>
-            <h1>Login form</h1>
+            <h1>Register new user</h1>
         <form>
+            <input type="text" name="firstname" placeholder="firstname" required onChange={handleChange}/><br/>
+            <input type="text" name="lastname" placeholder="lastname" required onChange={handleChange}/><br/>
             <input type="text" name="username" placeholder="username" required onChange={handleChange}/><br/>
             <input type="password" name="password" placeholder="password" required onChange={handleChange}/><br/>
-            <button onClick={onSubmit} >Login</button>
+            <button onClick={onSubmit} >Register</button>
         </form>
         </Layout>
     )
