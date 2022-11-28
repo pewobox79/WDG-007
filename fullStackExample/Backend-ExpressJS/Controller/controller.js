@@ -23,8 +23,8 @@ if(req.body){
     const values = [firstname, lastname, email, password];
     const {rows} = await pool.query(query, values);
 
-    
-    res.status(200).json({msg: "user registred"})
+
+    res.status(200).json({msg: "registred"})
 }else{
     res.status(400).json({msg: "error"})
 }

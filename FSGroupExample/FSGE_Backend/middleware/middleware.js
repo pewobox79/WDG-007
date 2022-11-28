@@ -29,3 +29,21 @@ export const checkUserLoginRequest = async (req, res, next)=>{
     }
     
 }
+
+export const checkUsername = async (req, res, next)=>{
+
+    const {username} = req.body;
+
+    const query ='SELECT * FROM users WHERE username=$1'
+    const value = [username]
+    const {rows} = await pool.query(query, value);
+    console.log("detected username", rows)
+
+    if(rows.length === 0){
+        res.status(200).json({msg: 'username nicht vorhanden'})
+        next()
+    }else{
+        res.status(500).json({msg: 'username gibt es schon'})
+    }
+
+}

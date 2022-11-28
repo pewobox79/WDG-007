@@ -1,13 +1,13 @@
 import { Router } from 'express'
 export const userRouter = Router();
-import { checkUserLoginRequest } from '../middleware/middleware.js';
+import { checkUserLoginRequest, checkUsername } from '../middleware/middleware.js';
 
 import { userLogin, createUser, getAllUser } from '../controller/userController.js'
 
 userRouter
     .route('/api/user')
     .get(getAllUser)
-    .post(createUser)
+    .post(checkUsername, createUser)
 
 userRouter
     .route('/api/user/login')

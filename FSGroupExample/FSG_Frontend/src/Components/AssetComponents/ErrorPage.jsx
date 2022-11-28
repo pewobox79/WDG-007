@@ -4,7 +4,7 @@ import Layout from '../Layout';
 export default function  ErrorPage(){
 
     return(
-        <Layout><h1>Error Page</h1></Layout>
+      <h1>Error Page</h1>
         
     )
 }

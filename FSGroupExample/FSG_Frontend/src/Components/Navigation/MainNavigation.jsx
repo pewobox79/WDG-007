@@ -8,6 +8,8 @@ export default function MainNavigation(){
             <Link to="/">Homepage</Link>
             <Link to="/login">Login</Link>
             <Link to="/registration">Registration</Link>
+            <Link to="/upload-image">Upload Image</Link>
+           
         </nav>
     )
 }

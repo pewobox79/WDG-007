@@ -1,6 +1,9 @@
-import React, {useState} from 'react'
-import { loginRequest } from '../controller/requestController';
-import Layout from './Layout';
+import React, {useContext, useState} from 'react'
+import { loginRequest } from '../../controller/requestController';
+import { LoggedStatusContext } from '../../main';
+
+
+
 
 export default function LoginForm(){
         const userSchema ={
@@ -27,15 +30,25 @@ export default function LoginForm(){
         
     }
     
-        
+    //check userstatus und behandle den return entsprechend
+
+const userStatus = useContext(LoggedStatusContext);
+
+
+
     return(
-        <Layout>
-            <h1>Login form</h1>
+
+        <div>
+            {userStatus ? <h1> Logout</h1> :
+            <div>
+          <h1>Login User</h1>
         <form>
             <input type="text" name="username" placeholder="username" required onChange={handleChange}/><br/>
             <input type="password" name="password" placeholder="password" required onChange={handleChange}/><br/>
             <button onClick={onSubmit} >Login</button>
         </form>
-        </Layout>
+        </div>
+}
+        </div>
     )
 }
