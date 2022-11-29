@@ -27,5 +27,6 @@
 /fullStackExample/Frontend-React/node_modules
 /FSGroupExample/FSG_Frontend/node_modules
 /FSGroupExample/FSGE_Backend/node_modules
+/woche10/mongoDBExercise/node_modules
 #sentsitive data
 /woche6/.env.*
