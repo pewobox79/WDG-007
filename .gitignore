@@ -28,5 +28,7 @@
 /FSGroupExample/FSG_Frontend/node_modules
 /FSGroupExample/FSGE_Backend/node_modules
 /woche10/mongoDBExercise/node_modules
+/woche11/sessionVsToken/node_modules
+/woche11/tokenPrep/node_modules
 #sentsitive data
 /woche6/.env.*

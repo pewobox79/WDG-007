@@ -4,7 +4,13 @@ import Layout from '../Layout';
 export default function  ErrorPage(){
 
     return(
-      <h1>Error Page</h1>
-        
+      <>
+      <nav>
+        <ul>
+          <li>item 1</li>
+        </ul>
+        </nav>
+      <h1>Error Page</h1> 
+      </> 
     )
 }
